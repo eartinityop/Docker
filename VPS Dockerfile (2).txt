@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt install ssh wget unzip git screen apt-utils screenfetch neofetch curl nano sudo iproute2 python3-pip python3-dev -y > /dev/null 2>&1
 RUN wget -O ngrok.zip https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.zip > /dev/null 2>&1
 RUN unzip ngrok.zip
-RUN echo "./ngrok config add-authtoken <2ROBrEXAAebWXh6h7xaP2uT2dwg_4rJbVAy1Qdr2U5GG2EnK8> &&" >>/1.sh
+RUN echo "./ngrok config add-authtoken <2SEzAyyxUOC83ET2TpJfSG9OG9T_rS7A7bDnxpxWTmR9mN24> &&" >>/1.sh
 RUN echo "./ngrok tcp 22 &>/dev/null &" >>/1.sh
 RUN mkdir /run/sshd
 RUN echo '/usr/sbin/sshd -D' >>/1.sh
